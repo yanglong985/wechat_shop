@@ -87,10 +87,10 @@
         location="{:U('index')}?brand_name="+brand_name;
     }
 
-    function del_id_url2(id){
+    function del_id_url(id){
         if(confirm("确认删除吗？"))
         {
-            location='&did='+id;
+            location='{:U("del")}?did='+id;
         }
     }
 
